@@ -3,50 +3,53 @@ import { relations } from 'drizzle-orm';
 
 // Elements 
 
-export const recipe = sqliteTable('recipe', {
-    id: integer('id').primaryKey({autoIncrement: true}),
-    title: text('title').notNull(),
-});
-
-export const tag = sqliteTable('tag', {
+export const recipes = sqliteTable('recipes', {
     id: integer('id').primaryKey({autoIncrement: true}),
     name: text('name').notNull(),
+});
+
+export const tags = sqliteTable('tags', {
+    id: text('name').notNull().primaryKey()
 });
 
 // Joins 
 
 export const recipesToTags = sqliteTable('recipesToTags', {
-    tagId: integer('tagId')
+    tagId: text('tagId')
       .notNull()
-      .references(() => tag.id),
-    recipeId: integer('recipeId')
+      .references(() => tags.id),
+    recipesId: integer('recipesId')
       .notNull()
-      .references(() => recipe.id),
+      .references(() => recipes.id),
   },
   (t) => ({
-    pk: primaryKey({ columns: [t.tagId, t.recipeId] }),
+    pk: primaryKey({ columns: [t.tagId, t.recipesId] }),
   })
 );
 
 // Relations 
 
-export const recipeRelations = relations(recipe, ({ many }) => ({
+export const recipesRelations = relations(recipes, ({ many }) => ({
     recipesToTags: many(recipesToTags),
 }));
 
-export const tagRelations = relations(tag, ({ many }) => ({
+export const tagsRelations = relations(tags, ({ many }) => ({
     recipesToTags: many(recipesToTags),
 }));
 
 export const recipesToTagsRelations = relations(recipesToTags, ({ one }) => ({
-    recipe: one(recipe, { 
-        fields: [recipesToTags.recipeId], 
-        references: [recipe.id] 
+    recipes: one(recipes, { 
+        fields: [recipesToTags.recipesId], 
+        references: [recipes.id] 
     }),
-    tag: one(tag, { 
+    tags: one(tags, { 
         fields: [recipesToTags.tagId], 
-        references: [tag.id] 
+        references: [tags.id] 
     }),
 }));
 
+
+//
+export type Recipe = typeof recipes.$inferSelect;
+export type Tag = typeof tags.$inferSelect;
 

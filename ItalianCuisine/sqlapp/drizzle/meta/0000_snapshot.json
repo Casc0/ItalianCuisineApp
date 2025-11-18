@@ -1,11 +1,11 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "253b1cb8-3c2f-4d35-99e2-bf44587363ea",
+  "id": "307b6608-88c9-46eb-8c04-1584668ffd9f",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
-    "recipe": {
-      "name": "recipe",
+    "recipes": {
+      "name": "recipes",
       "columns": {
         "id": {
           "name": "id",
@@ -33,13 +33,13 @@
       "columns": {
         "tagId": {
           "name": "tagId",
-          "type": "integer",
+          "type": "text",
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
         },
-        "recipeId": {
-          "name": "recipeId",
+        "recipesId": {
+          "name": "recipesId",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
@@ -48,25 +48,25 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "recipesToTags_tagId_tag_id_fk": {
-          "name": "recipesToTags_tagId_tag_id_fk",
+        "recipesToTags_tagId_tags_name_fk": {
+          "name": "recipesToTags_tagId_tags_name_fk",
           "tableFrom": "recipesToTags",
-          "tableTo": "tag",
+          "tableTo": "tags",
           "columnsFrom": [
             "tagId"
           ],
           "columnsTo": [
-            "id"
+            "name"
           ],
           "onDelete": "no action",
           "onUpdate": "no action"
         },
-        "recipesToTags_recipeId_recipe_id_fk": {
-          "name": "recipesToTags_recipeId_recipe_id_fk",
+        "recipesToTags_recipesId_recipes_id_fk": {
+          "name": "recipesToTags_recipesId_recipes_id_fk",
           "tableFrom": "recipesToTags",
-          "tableTo": "recipe",
+          "tableTo": "recipes",
           "columnsFrom": [
-            "recipeId"
+            "recipesId"
           ],
           "columnsTo": [
             "id"
@@ -76,31 +76,24 @@
         }
       },
       "compositePrimaryKeys": {
-        "recipesToTags_tagId_recipeId_pk": {
+        "recipesToTags_tagId_recipesId_pk": {
           "columns": [
             "tagId",
-            "recipeId"
+            "recipesId"
           ],
-          "name": "recipesToTags_tagId_recipeId_pk"
+          "name": "recipesToTags_tagId_recipesId_pk"
         }
       },
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "tag": {
-      "name": "tag",
+    "tags": {
+      "name": "tags",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": true
-        },
         "name": {
           "name": "name",
           "type": "text",
-          "primaryKey": false,
+          "primaryKey": true,
           "notNull": true,
           "autoincrement": false
         }
