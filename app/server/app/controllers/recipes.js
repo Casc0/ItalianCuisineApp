@@ -58,7 +58,8 @@ const getSimilarRecipes = async (req, res) => {
 
 const addRecipe = async (req, res) => {
   try {
-    const newRecipe = await model.addRecipe(req.body);
+    // req.user.id viene del middleware authenticate; lo adjuntamos para registrar quién creó la receta
+    const newRecipe = await model.addRecipe(req.body, req.user.id);
     res.status(201).json({ success: true, data: newRecipe });
   } catch (error) {
     // El slug se genera desde el nombre; si ya existe una receta con ese nombre, el índice único lo rechaza

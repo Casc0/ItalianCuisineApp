@@ -46,10 +46,11 @@ const getSimilarRecipes = async (slug, limit) => {
   return similar;
 };
 
-const addRecipe = async (recipeData) => {
+const addRecipe = async (recipeData, userId) => {
   const newRecipe = new Recipe({
     ...recipeData,
-    slug: slugify(recipeData.nombre), // generado a partir del nombre; el índice único en DB rechaza duplicados
+    slug:      slugify(recipeData.nombre), // generado a partir del nombre; el índice único en DB rechaza duplicados
+    creadaPor: userId,
   });
   return newRecipe.save();
 };

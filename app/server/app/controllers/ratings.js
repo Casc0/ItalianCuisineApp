@@ -5,8 +5,8 @@ const rateRecipe = async (req, res) => {
   try {
     const { valor } = req.body;
 
-    // Validamos que el valor esté en el rango permitido
-    if (!valor || valor < 1 || valor > 5) {
+    // Validamos tipo y rango; typeof descarta strings que pasarían la comparación numérica en JS
+    if (typeof valor !== 'number' || valor < 1 || valor > 5) {
       return res.status(400).json({ message: 'El valor debe ser un número entre 1 y 5.' });
     }
 
