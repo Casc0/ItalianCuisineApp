@@ -1,21 +1,49 @@
 import { API_BASE_URL } from '../Constants/constants';
 
 export const getRecipes = async (from, limit) => {
-  // TODO: fetch GET /api/recipes?from=X&limit=Y
+  const response = await fetch(`${API_BASE_URL}/recipes?from=${from}&limit=${limit}`);
+  if (!response.ok) {
+    throw new Error('Error al traer las recetas');
+  }
+  return response.json();
 };
 
 export const getFeaturedRecipes = async (limit) => {
-  // TODO: fetch GET /api/recipes/featured?limit=N
+  const response = await fetch(`${API_BASE_URL}/recipes/featured?limit=${limit}`);
+  if (!response.ok) {
+    throw new Error('Error al traer las recetas destacadas');
+  }
+  const json = await response.json();
+  return json.data;
 };
 
 export const getRecipeById = async (id) => {
-  // TODO: fetch GET /api/recipes/:id
+  const response = await fetch(`${API_BASE_URL}/recipes/${id}`);
+  if (!response.ok) {
+    throw new Error('Error al traer la receta');
+  }
+  const json = await response.json();
+  return json.data;
 };
 
 export const getSimilarRecipes = async (id) => {
-  // TODO: fetch GET /api/recipes/:id/similar
+  const response = await fetch(`${API_BASE_URL}/recipes/${id}/similar`);
+  if (!response.ok) {
+    throw new Error('Error al traer recetas similares');
+  }
+  const json = await response.json();
+  return json.data;
 };
 
 export const createRecipe = async (recipeData) => {
-  // TODO: fetch POST /api/recipes
+  const response = await fetch(`${API_BASE_URL}/recipes`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(recipeData),
+  });
+  const json = await response.json();
+  if (!response.ok) {
+    throw new Error(json.message || 'Error al guardar la receta');
+  }
+  return json.data;
 };

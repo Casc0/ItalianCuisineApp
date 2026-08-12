@@ -15,28 +15,28 @@
     "ingredientes": [
       {
         "nombre": "Albahaca fresca (hojas de Génova)",
-        "cantidad": 1,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Piñones",
-        "cantidad": 40,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano Reggiano rallado",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de Oliva",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -69,7 +69,7 @@
   {
     "slug": "risotto",
     "nombre": "Risotto Cremoso de Hongos",
-    "imagenPrincipal": "img/risotto.jpg",
+    "imagenPrincipal": "img/Risotto.jpg",
     "descripcion": "Un plato reconfortante y sofisticado. Este risotto utiliza arroz Arborio y la profundidad de sabor de los hongos porcini secos, creando una base rica que se complementa con vino blanco y una cremosa mantecatura final con mantequilla y queso.",
     "categorias": {
       "tiempoMinutos": 45,
@@ -82,33 +82,33 @@
     "ingredientes": [
       {
         "nombre": "Arroz Arborio o Carnaroli",
-        "cantidad": 240,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Hongos porcini secos (rehidratados)",
-        "cantidad": 22.5,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de verduras caliente",
-        "cantidad": 562.5,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cebolla picada finamente",
-        "cantidad": 0.8,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 112.5,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Mantequilla fría y queso parmesano",
-        "cantidad": 75,
-        "unidad": "g"
+        "nombre": "Mantequilla fría y queso Parmesano",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -145,7 +145,7 @@
   {
     "slug": "frittata",
     "nombre": "Frittata Italiana de Salchicha",
-    "imagenPrincipal": "img/frittata.jpg",
+    "imagenPrincipal": "img/Frittata.jpg",
     "descripcion": "La frittata es la versión italiana de la tortilla: versátil y cocinada enteramente en la sartén (o con un toque final de horno). Es perfecta para un brunch sustancioso o una cena rápida, combinando huevos batidos, queso ricotta cremoso, salchicha italiana picante y espinacas frescas.",
     "categorias": {
       "tiempoMinutos": 25,
@@ -159,27 +159,27 @@
       {
         "nombre": "huevos grandes",
         "cantidad": 6,
-        "unidad": "unidad"
+        "unidad": null
       },
       {
         "nombre": "Salchicha italiana desmenuzada (sin tripa)",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Espinacas frescas o cocidas",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso ricotta o mozzarella",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva y cebolla",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -229,48 +229,43 @@
     "ingredientes": [
       {
         "nombre": "Placas de lasagna",
-        "cantidad": 800,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Carne picada (ternera y cerdo)",
-        "cantidad": 1000,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomate triturado",
-        "cantidad": 800,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Leche",
-        "cantidad": 1000,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Harina",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Parmesano rallado",
-        "cantidad": 160,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Zanahoria",
-        "cantidad": 2,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Apio y cebolla (para el sofrito)",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "nombre": "Zanahoria, Apio y Cebolla (para el sofrito)",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -320,38 +315,38 @@
     "ingredientes": [
       {
         "nombre": "Queso Mascarpone",
-        "cantidad": 375,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Huevos (yemas y claras separadas)",
-        "cantidad": 4.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Café fuerte (espresso) frío",
-        "cantidad": 300,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Licor (Marsala o Ron)",
-        "cantidad": 75,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Bizcochos de soletilla",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cacao en polvo sin azúcar",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -405,23 +400,23 @@
     "ingredientes": [
       {
         "nombre": "Patatas (tipo russet o harinosas)",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Harina de trigo",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Huevo",
-        "cantidad": 3,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Sal y nuez moscada",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "nombre": "Sal y Nuez moscada",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -470,44 +465,34 @@
     },
     "ingredientes": [
       {
-        "nombre": "Zanahoria",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "nombre": "Zanahoria, Apio, Cebolla (para el soffritto)",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Apio",
-        "cantidad": 1.5,
-        "unidad": "rama"
-      },
-      {
-        "nombre": "Cebolla (para el soffritto)",
-        "cantidad": 1.5,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Patatas y calabacín",
-        "cantidad": 3,
-        "unidad": "unidad"
+        "nombre": "Patatas y Calabacín",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Frijoles (cannellini o garbanzos)",
-        "cantidad": 450,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pasta corta o Arroz",
-        "cantidad": 480,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de verduras",
-        "cantidad": 1125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -557,33 +542,33 @@
     "ingredientes": [
       {
         "nombre": "Rebanadas de pan de campo o baguette",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomates maduros (tipo Roma)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Albahaca fresca",
-        "cantidad": 1,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Sal y pimienta",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "nombre": "Sal y Pimienta",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -633,28 +618,28 @@
     "ingredientes": [
       {
         "nombre": "Spaghetti o Rigatoni",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Guanciale (o panceta curada)",
-        "cantidad": 75,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Yemas de huevo",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Pecorino Romano rallado",
-        "cantidad": 30,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pimienta negra recién molida",
-        "cantidad": 0.2,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -704,33 +689,33 @@
     "ingredientes": [
       {
         "nombre": "Filetes de ternera finos",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Lonchas de Prosciutto",
-        "cantidad": 75,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Hojas de salvia fresca",
-        "cantidad": 4,
-        "unidad": "hoja"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 75,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Harina para rebozar",
-        "cantidad": 125,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -780,28 +765,28 @@
     "ingredientes": [
       {
         "nombre": "Nata para montar (crema de leche)",
-        "cantidad": 500,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vaina de vainilla (o extracto)",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Gelatina (hojas o en polvo)",
-        "cantidad": 10,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Frutos rojos para el coulis",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -851,38 +836,28 @@
     "ingredientes": [
       {
         "nombre": "Arroz Arborio o Carnaroli (cocido con azafrán)",
-        "cantidad": 480,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ragú de carne (salsa boloñesa)",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella cortada en cubos",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Harina",
-        "cantidad": 375,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevo",
-        "cantidad": 4.5,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Pan rallado para el rebozado",
-        "cantidad": 150,
-        "unidad": "g"
+        "nombre": "Harina, huevo y pan rallado para el rebozado",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite para freír",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -932,28 +907,28 @@
     "ingredientes": [
       {
         "nombre": "Masa de pizza",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate San Marzano",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella fresca (fior di latte)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Albahaca fresca",
-        "cantidad": 0.5,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1003,23 +978,23 @@
     "ingredientes": [
       {
         "nombre": "Fettuccine (pasta al huevo)",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla sin sal de alta calidad",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano Reggiano rallado",
-        "cantidad": 40,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Agua de cocción de la pasta",
-        "cantidad": 125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1070,42 +1045,32 @@
       {
         "nombre": "jarretes de ternera con hueso",
         "cantidad": 4,
-        "unidad": "g"
+        "unidad": null
       },
       {
         "nombre": "Harina para rebozar",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 150,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de carne",
-        "cantidad": 750,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Zanahoria",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Apio",
-        "cantidad": 1,
-        "unidad": "rama"
-      },
-      {
-        "nombre": "Cebolla",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "nombre": "Zanahoria, Apio y Cebolla",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Gremolata (perejil, ajo, ralladura de limón)",
-        "cantidad": 2,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1155,28 +1120,28 @@
     "ingredientes": [
       {
         "nombre": "Tomates maduros grandes",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella de búfala (o fior di latte)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Hojas de albahaca fresca",
-        "cantidad": 0.5,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Sal marina y pimienta negra",
-        "cantidad": 0.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1226,38 +1191,33 @@
     "ingredientes": [
       {
         "nombre": "Spaghetti",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Almejas frescas (vongole)",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Ajo",
-        "cantidad": 1,
-        "unidad": "diente"
-      },
-      {
-        "nombre": "Perejil",
-        "cantidad": 1,
-        "unidad": "cda"
+        "nombre": "Ajo, Perejil",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 75,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Chile o Peperoncino (opcional)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1307,23 +1267,23 @@
     "ingredientes": [
       {
         "nombre": "Spaghetti o Tonnarelli",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Pecorino Romano rallado",
-        "cantidad": 30,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pimienta negra recién molida",
-        "cantidad": 0.2,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Agua de cocción de la pasta",
-        "cantidad": 125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1372,44 +1332,24 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 625,
-        "unidad": "g"
+        "nombre": "Para la cáscara: Harina, Vino Marsala, Cacao",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Vino marsala",
-        "cantidad": 250,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Cacao",
-        "cantidad": 250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Queso ricotta de oveja",
-        "cantidad": 625,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar glas",
-        "cantidad": 125,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Vainilla",
-        "cantidad": 2.5,
-        "unidad": "cdta"
+        "nombre": "Para el relleno: Queso Ricotta de oveja, Azúcar glas, Vainilla",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite para freír",
-        "cantidad": 7.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Fruta confitada o pepitas de chocolate",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1459,33 +1399,33 @@
     "ingredientes": [
       {
         "nombre": "Berenjenas",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate casera",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella fresca",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Albahaca fresca",
-        "cantidad": 1,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1535,28 +1475,28 @@
     "ingredientes": [
       {
         "nombre": "Harina de fuerza",
-        "cantidad": 375,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Levadura fresca",
-        "cantidad": 10.5,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Agua tibia",
-        "cantidad": 375,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra (AOVE)",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Sal marina gruesa",
-        "cantidad": 1.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1606,18 +1546,18 @@
     "ingredientes": [
       {
         "nombre": "Yemas de huevo",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino Marsala dulce (o Vino de Jerez)",
-        "cantidad": 50,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1667,28 +1607,28 @@
     "ingredientes": [
       {
         "nombre": "Masa de pasta fresca (harina, huevo)",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Relleno de carne asada (ternera, cerdo) o ricotta y espinacas",
-        "cantidad": 250,
-        "unidad": "g"
+        "nombre": "Relleno de carne asada (ternera, cerdo) o Ricotta y espinacas",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla de alta calidad",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Hojas de salvia fresca",
-        "cantidad": 8,
-        "unidad": "hoja"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1738,43 +1678,33 @@
     "ingredientes": [
       {
         "nombre": "Pescado blanco (ej. bacalao)",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mariscos variados (almejas, mejillones, calamares)",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomate triturado",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 150,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de pescado",
-        "cantidad": 750,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
-      },
-      {
-        "nombre": "Perejil",
-        "cantidad": 2,
-        "unidad": "cda"
-      },
-      {
-        "nombre": "Peperoncino",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "nombre": "Ajo, Perejil y Peperoncino",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1824,18 +1754,18 @@
     "ingredientes": [
       {
         "nombre": "Corte de lomo de ternera (T-bone) de 1.5kg a 2kg",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Sal marina gruesa",
-        "cantidad": 0.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva (opcional)",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1884,59 +1814,24 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 500,
-        "unidad": "g"
+        "nombre": "Para la masa: Harina, Mantequilla, Azúcar, Huevos",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Mantequilla",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevos",
-        "cantidad": 6,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Leche",
-        "cantidad": 1000,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Yemas de huevo",
-        "cantidad": 6,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Maicena",
-        "cantidad": 80,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Ralladura de limón",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "nombre": "Para el relleno: Leche, Yemas de huevo, Azúcar, Maicena, Ralladura de limón",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Piñones",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar glas para decorar",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -1987,27 +1882,27 @@
       {
         "nombre": "costillas de ternera con hueso (grosor medio)",
         "cantidad": 2,
-        "unidad": "g"
+        "unidad": null
       },
       {
         "nombre": "Huevos batidos",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pan rallado",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla clarificada o aceite para freír",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Sal y limón (para servir)",
-        "cantidad": 0.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2057,28 +1952,28 @@
     "ingredientes": [
       {
         "nombre": "Masa de pizza o pan",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella fresca (bien escurrida)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate espesa",
-        "cantidad": 800,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite para freír",
-        "cantidad": 6,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Orégano o albahaca",
-        "cantidad": 2,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2128,33 +2023,33 @@
     "ingredientes": [
       {
         "nombre": "Maccheroni o Rigatoni",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Berenjenas",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate casera",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Ricotta salata (queso seco y salado)",
-        "cantidad": 250,
-        "unidad": "g"
+        "nombre": "Ricotta Salata (queso seco y salado)",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Albahaca fresca",
-        "cantidad": 1,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva para freír y cocinar",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2204,43 +2099,33 @@
     "ingredientes": [
       {
         "nombre": "Frijoles Cannellini",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Col Negra (Cavolo Nero)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Col Rizada o Repollo",
-        "cantidad": 1200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Zanahoria",
-        "cantidad": 2,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Apio",
-        "cantidad": 2,
-        "unidad": "rama"
-      },
-      {
-        "nombre": "Cebolla",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "nombre": "Zanahoria, Apio y Cebolla",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pan duro (sin corteza)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Caldo de verduras y aceite de oliva",
-        "cantidad": 6,
-        "unidad": "cda"
+        "nombre": "Caldo de verduras y Aceite de oliva",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2289,19 +2174,19 @@
     },
     "ingredientes": [
       {
-        "nombre": "Melón cantalupo o honeydew (maduro y frío)",
-        "cantidad": 0.2,
-        "unidad": "unidad"
+        "nombre": "Melón Cantalupo o Honeydew (maduro y frío)",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Prosciutto Crudo (jamón curado)",
-        "cantidad": 75,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Menta (opcional)",
-        "cantidad": 3,
-        "unidad": "hoja"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2347,28 +2232,28 @@
     "ingredientes": [
       {
         "nombre": "Lomo de ternera (magatello)",
-        "cantidad": 750,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Atún en aceite (escurrido)",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mayonesa",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Alcaparras y anchoas",
-        "cantidad": 45,
-        "unidad": "g"
+        "nombre": "Alcaparras y Anchoas",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de carne o vino blanco",
-        "cantidad": 225,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2417,29 +2302,14 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 500,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Mantequilla",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevo",
-        "cantidad": 6,
-        "unidad": "unidad"
+        "nombre": "Para la masa (pasta frolla): Harina, Mantequilla, Azúcar, Huevo",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mermelada de fruta (albaricoque o cereza)",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2489,28 +2359,28 @@
     "ingredientes": [
       {
         "nombre": "Bucatini o Spaghetti",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Guanciale",
-        "cantidad": 75,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pecorino Romano rallado",
-        "cantidad": 30,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate o tomates pelados",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Chile o Peperoncino",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2560,28 +2430,28 @@
     "ingredientes": [
       {
         "nombre": "Masa de pizza",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ricotta fresca",
-        "cantidad": 125,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella (fior di latte o baja humedad)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Jamón cocido o Salame",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Huevo batido para sellar",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2630,39 +2500,34 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 500,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevos",
-        "cantidad": 6,
-        "unidad": "unidad"
+        "nombre": "Harina, Huevos",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla o aceite",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Levadura en polvo",
-        "cantidad": 14,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ralladura de limón",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Leche o yogur",
-        "cantidad": 1000,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2712,28 +2577,28 @@
     "ingredientes": [
       {
         "nombre": "Ajo (mucha cantidad)",
-        "cantidad": 2,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Anchoas en aceite",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla (opcional)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Verduras crudas (pimientos, zanahorias, apio)",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2783,38 +2648,23 @@
     "ingredientes": [
       {
         "nombre": "Bizcocho o bizcochos de soletilla",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Leche",
-        "cantidad": 750,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Yemas de huevo",
-        "cantidad": 4.5,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 150,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Ralladura de limón (para la crema)",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "nombre": "Leche, Yemas de huevo, Azúcar, Ralladura de limón (para la crema)",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cacao en polvo (para la crema de chocolate)",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Licor Alchermes o Ron",
-        "cantidad": 75,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2864,28 +2714,28 @@
     "ingredientes": [
       {
         "nombre": "Tomates maduros o triturado",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pan de campo toscano duro (sin sal)",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de verduras",
-        "cantidad": 750,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Ajo y albahaca fresca",
-        "cantidad": 2,
-        "unidad": "diente"
+        "nombre": "Ajo y Albahaca fresca",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -2935,28 +2785,28 @@
     "ingredientes": [
       {
         "nombre": "Pistachos pelados y sin sal",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Queso parmesano y pecorino (opcional)",
-        "cantidad": 80,
-        "unidad": "g"
+        "nombre": "Queso Parmesano y Pecorino (opcional)",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Albahaca o Menta (opcional)",
-        "cantidad": 1,
-        "unidad": "taza"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3006,38 +2856,28 @@
     "ingredientes": [
       {
         "nombre": "Harina de maíz para Polenta",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo o agua",
-        "cantidad": 750,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ragú de carne de jabalí o ternera",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino tinto",
-        "cantidad": 150,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Zanahoria",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Apio",
-        "cantidad": 1,
-        "unidad": "rama"
-      },
-      {
-        "nombre": "Cebolla",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "nombre": "Zanahoria, Apio y Cebolla",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3086,49 +2926,29 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Pan rallado",
-        "cantidad": 100,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Agua",
-        "cantidad": 250,
-        "unidad": "ml"
+        "nombre": "Para los Pisarei: Harina, Pan rallado, Agua",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Frijoles Borlotti o Canellinni",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Cebolla",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Zanahoria",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Apio",
-        "cantidad": 1,
-        "unidad": "rama"
+        "nombre": "Cebolla, Zanahoria, Apio",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Extracto de tomate",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Manteca de cerdo (lardo) o aceite",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3177,49 +2997,14 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 375,
-        "unidad": "g"
+        "nombre": "Para la masa: Harina, Agua, Manteca de cerdo",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Agua",
-        "cantidad": 375,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Manteca de cerdo",
-        "cantidad": 150,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Ricotta fresca",
-        "cantidad": 375,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Sémola",
-        "cantidad": 225,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 150,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Fruta confitada",
-        "cantidad": 120,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Canela",
-        "cantidad": 1.5,
-        "unidad": "cdta"
-      },
-      {
-        "nombre": "Esencia de azahar",
-        "cantidad": 1.5,
-        "unidad": "cdta"
+        "nombre": "Para el relleno: Ricotta fresca, Sémola, Azúcar, Fruta confitada, Canela, Esencia de azahar",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3268,39 +3053,19 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Agua",
-        "cantidad": 250,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Sal",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "nombre": "Harina, Agua, Sal",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Manteca de cerdo o aceite de oliva",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Prosciutto crudo",
-        "cantidad": 150,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Rúcula",
-        "cantidad": 50,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Queso squacquerone o crescenza",
-        "cantidad": 250,
-        "unidad": "g"
+        "nombre": "Relleno: Prosciutto Crudo, Rúcula, Queso Squacquerone o Crescenza",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3350,28 +3115,28 @@
     "ingredientes": [
       {
         "nombre": "Spaghetti",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ajo en láminas",
-        "cantidad": 1,
-        "unidad": "diente"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Peperoncino (chile)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Perejil fresco picado",
-        "cantidad": 1,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3421,33 +3186,33 @@
     "ingredientes": [
       {
         "nombre": "Arroz Carnaroli o Arborio",
-        "cantidad": 240,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azafrán en hebras (o polvo)",
-        "cantidad": 0.8,
-        "unidad": "sobre"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cebolla finamente picada",
-        "cantidad": 0.8,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino blanco seco",
-        "cantidad": 112.5,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de carne o verduras",
-        "cantidad": 562.5,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Mantequilla y queso parmesano",
-        "cantidad": 75,
-        "unidad": "g"
+        "nombre": "Mantequilla y queso Parmesano",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3497,28 +3262,28 @@
     "ingredientes": [
       {
         "nombre": "Rigatoni o Spaghetti",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Guanciale",
-        "cantidad": 75,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Pecorino Romano rallado",
-        "cantidad": 30,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pimienta negra recién molida",
-        "cantidad": 0.2,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Agua de cocción de la pasta",
-        "cantidad": 125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3568,28 +3333,23 @@
     "ingredientes": [
       {
         "nombre": "Sémola o Harina de almendras",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Huevos",
-        "cantidad": 6,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
+        "nombre": "Huevos, Azúcar",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ralladura de limón o naranja",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Chocolate negro para la cobertura",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3639,28 +3399,28 @@
     "ingredientes": [
       {
         "nombre": "Calamares y camarones",
-        "cantidad": 150,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pescado blanco pequeño (ej. boquerones)",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Harina de sémola o de arroz",
-        "cantidad": 125,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de girasol para freír",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Limón (para servir)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3710,33 +3470,33 @@
     "ingredientes": [
       {
         "nombre": "Bacalao seco (stockfish) desalado",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Leche",
-        "cantidad": 500,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cebolla",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Harina de trigo (para espesar)",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3786,38 +3546,33 @@
     "ingredientes": [
       {
         "nombre": "Chocolate negro de alta calidad",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Almendras molidas",
-        "cantidad": 160,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Azúcar",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevos",
-        "cantidad": 6,
-        "unidad": "unidad"
+        "nombre": "Azúcar, Huevos",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Un toque de licor (ej. Strega o ron)",
-        "cantidad": 100,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar glas para decorar",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3867,48 +3622,28 @@
     "ingredientes": [
       {
         "nombre": "Rabo de toro (coda di bue)",
-        "cantidad": 1,
-        "unidad": "kg"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vino tinto",
-        "cantidad": 150,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomate triturado",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Apio",
-        "cantidad": 1,
-        "unidad": "rama"
+        "nombre": "Apio, Zanahoria, Cebolla",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Zanahoria",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Cebolla",
-        "cantidad": 1,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Pasas",
-        "cantidad": 50,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Piñones",
-        "cantidad": 40,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Hierbas aromáticas",
-        "cantidad": 1,
-        "unidad": "manojo"
+        "nombre": "Pasas, Piñones, Hierbas aromáticas",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -3958,18 +3693,18 @@
     "ingredientes": [
       {
         "nombre": "Tortellini frescos (rellenos de carne)",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de capón (o pollo/ternera) casero",
-        "cantidad": 1125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado (para servir)",
-        "cantidad": 120,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4019,18 +3754,18 @@
     "ingredientes": [
       {
         "nombre": "Helado de vainilla o Fior di Latte",
-        "cantidad": 0.2,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Café espresso caliente",
-        "cantidad": 50,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Licor (ej. Amaretto) opcional",
-        "cantidad": 12.5,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4079,39 +3814,24 @@
     },
     "ingredientes": [
       {
-        "nombre": "Agua",
-        "cantidad": 500,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Harina",
-        "cantidad": 500,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Mantequilla",
-        "cantidad": 200,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevos",
-        "cantidad": 6,
-        "unidad": "unidad"
+        "nombre": "Para la masa choux: Agua, Harina, Mantequilla, Huevos",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Crema Pastelera",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cerezas Amarena (cerezas negras confitadas)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite para freír (o al horno)",
-        "cantidad": 6,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4161,38 +3881,23 @@
     "ingredientes": [
       {
         "nombre": "Pescado y marisco variado (13 tipos en la receta original)",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Tomate",
-        "cantidad": 400,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Vino blanco",
-        "cantidad": 150,
-        "unidad": "ml"
+        "nombre": "Tomate, Vino blanco",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vinagre (de vino o manzana)",
-        "cantidad": 2,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Aceite de oliva",
-        "cantidad": 3,
-        "unidad": "cda"
-      },
-      {
-        "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
-      },
-      {
-        "nombre": "Perejil",
-        "cantidad": 2,
-        "unidad": "cda"
+        "nombre": "Aceite de oliva, ajo, perejil",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4242,28 +3947,28 @@
     "ingredientes": [
       {
         "nombre": "Calabacines",
-        "cantidad": 2,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mozzarella fresca",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado",
-        "cantidad": 80,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa de tomate casera",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Albahaca y aceite de oliva",
-        "cantidad": 3,
-        "unidad": "cda"
+        "nombre": "Albahaca y Aceite de oliva",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4312,39 +4017,29 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 625,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Huevos",
-        "cantidad": 7.5,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 250,
-        "unidad": "g"
+        "nombre": "Harina, Huevos, Azúcar",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla o aceite",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ralladura de limón o naranja",
-        "cantidad": 2.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Ron o licor de anís",
-        "cantidad": 125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite para freír",
-        "cantidad": 7.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4394,33 +4089,28 @@
     "ingredientes": [
       {
         "nombre": "Orecchiette (pasta fresca)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salchicha italiana (sin tripa)",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Broccoletti (grelos o brócoli)",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Ajo",
-        "cantidad": 2,
-        "unidad": "diente"
-      },
-      {
-        "nombre": "Peperoncino (chile)",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "nombre": "Ajo, Peperoncino (chile)",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4470,38 +4160,33 @@
     "ingredientes": [
       {
         "nombre": "Queso Mascarpone",
-        "cantidad": 375,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pasta de Pistacho (100% pistacho)",
-        "cantidad": 90,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Huevos",
-        "cantidad": 4.5,
-        "unidad": "unidad"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 150,
-        "unidad": "g"
+        "nombre": "Huevos, Azúcar",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Bizcochos de soletilla",
-        "cantidad": 300,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Leche o Café",
-        "cantidad": 750,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pistachos picados para decorar",
-        "cantidad": 90,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4551,23 +4236,23 @@
     "ingredientes": [
       {
         "nombre": "Harina de garbanzos",
-        "cantidad": 250,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Agua",
-        "cantidad": 250,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 3,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Sal y pimienta negra",
-        "cantidad": 1,
-        "unidad": "cdta"
+        "nombre": "Sal y Pimienta negra",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4617,18 +4302,18 @@
     "ingredientes": [
       {
         "nombre": "Cappelletti frescos (rellenos de queso y/o carne)",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de capón o pollo casero",
-        "cantidad": 1125,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado (para servir)",
-        "cantidad": 120,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4677,34 +4362,29 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 1250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 500,
-        "unidad": "g"
+        "nombre": "Harina, Azúcar",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Almendras enteras (sin pelar)",
-        "cantidad": 400,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Huevos",
-        "cantidad": 15,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Vin Santo (vino dulce de postre)",
-        "cantidad": 500,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4757,44 +4437,24 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina de fuerza",
-        "cantidad": 625,
-        "unidad": "g"
+        "nombre": "Harina de fuerza, Masa Madre",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Masa madre",
-        "cantidad": 17.5,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Mantequilla",
-        "cantidad": 250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 250,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Yemas de huevo",
-        "cantidad": 7.5,
-        "unidad": "unidad"
+        "nombre": "Mantequilla, Azúcar, Yemas de huevo",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cáscara de naranja y limón confitada",
-        "cantidad": 2.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Pasas",
-        "cantidad": 125,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Vainilla",
-        "cantidad": 2.5,
-        "unidad": "cdta"
+        "nombre": "Pasas, Vainilla",
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4844,23 +4504,23 @@
     "ingredientes": [
       {
         "nombre": "Masa de pan dulce (harina, azúcar, levadura)",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Uvas negras (tipo Concord o Fragola)",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 6,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Azúcar (para espolvorear)",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4910,23 +4570,23 @@
     "ingredientes": [
       {
         "nombre": "Callo (abomaso) de ternera",
-        "cantidad": 500,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Caldo de carne (con zanahoria, apio, cebolla)",
-        "cantidad": 1,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Panecillos italianos",
-        "cantidad": 4,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Salsa verde (perejil, alcaparras, anchoas) y/o salsa picante",
-        "cantidad": 2,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -4976,28 +4636,28 @@
     "ingredientes": [
       {
         "nombre": "Spaghetti o Linguine",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Nata (crema de leche)",
-        "cantidad": 250,
-        "unidad": "ml"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Limones (ralladura y jugo)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Mantequilla",
-        "cantidad": 50,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Queso Parmesano rallado",
-        "cantidad": 40,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -5047,33 +4707,33 @@
     "ingredientes": [
       {
         "nombre": "Pan duro (o friselle)",
-        "cantidad": 100,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomates frescos (picados)",
-        "cantidad": 200,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Pepino (opcional)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Cebolla roja (opcional)",
-        "cantidad": 0.5,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 1.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Orégano y sal",
-        "cantidad": 0.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -5122,34 +4782,24 @@
     },
     "ingredientes": [
       {
-        "nombre": "Harina",
-        "cantidad": 375,
-        "unidad": "g"
-      },
-      {
-        "nombre": "Agua",
-        "cantidad": 375,
-        "unidad": "ml"
-      },
-      {
-        "nombre": "Levadura",
-        "cantidad": 10.5,
-        "unidad": "g"
+        "nombre": "Harina, Agua, Levadura",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva virgen extra",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Sal marina gruesa",
-        "cantidad": 1.5,
-        "unidad": "cdta"
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Romero fresco (opcional)",
-        "cantidad": 3,
-        "unidad": "ramita"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
@@ -5199,43 +4849,33 @@
     "ingredientes": [
       {
         "nombre": "Berenjenas",
-        "cantidad": 3,
-        "unidad": "unidad"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Apio",
-        "cantidad": 1.5,
-        "unidad": "rama"
-      },
-      {
-        "nombre": "Cebolla",
-        "cantidad": 1.5,
-        "unidad": "unidad"
+        "nombre": "Apio, Cebolla",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Tomate pelado",
-        "cantidad": 600,
-        "unidad": "g"
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Aceitunas y alcaparras",
-        "cantidad": 150,
-        "unidad": "g"
+        "nombre": "Aceitunas y Alcaparras",
+        "cantidad": null,
+        "unidad": null
       },
       {
-        "nombre": "Vinagre de vino",
-        "cantidad": 3,
-        "unidad": "cda"
-      },
-      {
-        "nombre": "Azúcar",
-        "cantidad": 150,
-        "unidad": "g"
+        "nombre": "Vinagre de vino, Azúcar",
+        "cantidad": null,
+        "unidad": null
       },
       {
         "nombre": "Aceite de oliva",
-        "cantidad": 4.5,
-        "unidad": "cda"
+        "cantidad": null,
+        "unidad": null
       }
     ],
     "pasos": [
