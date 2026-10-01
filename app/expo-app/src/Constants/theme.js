@@ -5,7 +5,7 @@ export const colors = {
 
   primary: '#CD212A',       // rojo (botones, acentos principales)
   secondary: '#008C45',     // verde (detalles secundarios)
-  background: '#F4F9FF',    // fondo general
+  background: '#f7f1db',    // fondo general
   cardBackground: '#ffffff',
   tagBackground: 'rgba(255,255,255,0.9)',
   tagText: '#111111',

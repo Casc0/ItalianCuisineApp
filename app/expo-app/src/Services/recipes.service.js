@@ -35,6 +35,16 @@ export const getSimilarRecipes = async (id) => {
   return json.data;
 };
 
+// Trae TODAS las recetas de una sola vez (usado solo para el buscador)
+export const getAllRecipes = async () => {
+  const response = await fetch(`${API_BASE_URL}/recipes?from=0&limit=70`);
+  if (!response.ok) {
+    throw new Error('Error al traer todas las recetas');
+  }
+  const json = await response.json();
+  return json.data;
+};
+
 export const createRecipe = async (recipeData) => {
   const response = await fetch(`${API_BASE_URL}/recipes`, {
     method: 'POST',
@@ -46,4 +56,20 @@ export const createRecipe = async (recipeData) => {
     throw new Error(json.message || 'Error al guardar la receta');
   }
   return json.data;
+};
+
+export const rateRecipe = async (slug, valor, token) => {
+  const response = await fetch(`${API_BASE_URL}/recipes/${slug}/rate`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`,
+    },
+    body: JSON.stringify({ valor }),
+  });
+  const json = await response.json();
+  if (!response.ok) {
+    throw new Error(json.message || 'Error al valorar la receta');
+  }
+  return json.data; // { promedio, total }
 };
