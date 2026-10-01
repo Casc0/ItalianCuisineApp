@@ -6,7 +6,7 @@ import { View, TouchableOpacity } from "react-native";
 import Home from "../Pages/Home/Home";
 import RecipeList from "../Pages/RecipeList/RecipeList";
 import RecipeDetail from "../Pages/RecipeDetail/RecipeDetail";
-import AddRecipe from "../Pages/AddRecipe/AddRecipe";
+//port AddRecipe from "../Pages/AddRecipe/AddRecipe";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import HeaderAuth from "../Components/HeaderAuth/HeaderAuth";

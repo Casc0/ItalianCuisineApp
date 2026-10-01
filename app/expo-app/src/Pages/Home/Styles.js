@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 import { colors, spacing, radius } from "../../Constants/theme";
 
 const styles = StyleSheet.create({
-
   // PANTALLA
   container: {
     // fondo de la pantalla
@@ -89,7 +88,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   featuredTitle: {
-    // nombre de la receta 
+    // nombre de la receta
     color: "#fff",
     fontSize: 30,
     fontWeight: "200",
@@ -110,7 +109,7 @@ const styles = StyleSheet.create({
     marginHorizontal: spacing.md,
   },
   dividerImage: {
-    // imagen decorativa 
+    // imagen decorativa
     position: "absolute",
     width: "100%",
     height: 250,
@@ -131,7 +130,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   sectionTitle: {
-    // recetas para explorar, sobre la pastilla verde 
+    // recetas para explorar, sobre la pastilla verde
     fontSize: 35,
     fontWeight: "600",
     color: colors.textPrimary,
@@ -168,7 +167,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     fontSize: 16,
   },
-
 });
 
 export default styles;

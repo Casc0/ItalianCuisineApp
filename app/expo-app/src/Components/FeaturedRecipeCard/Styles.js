@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 12,
     left: 28,
-    zIndex: 10, // ← nuevo: garantiza que esté arriba de todo
-    backgroundColor: "rgba(211, 38, 32, 0.8)", // ← temporal, para VER el área tocable (amarillo)
+    zIndex: 10,
+    backgroundColor: "rgba(211, 38, 32, 0.8)", 
     paddingHorizontal: 6,
     paddingVertical: 4,
   },

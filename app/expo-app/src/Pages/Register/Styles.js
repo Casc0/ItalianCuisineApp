@@ -2,6 +2,8 @@ import { StyleSheet, Platform } from "react-native";
 import { colors, spacing, radius } from "../../Constants/theme";
 
 const styles = StyleSheet.create({
+  // Contenedor principal
+  // centra todo en la pantalla. En la web ocupa todo el viewport
   container: {
     flex: 1,
     justifyContent: "center",
@@ -13,18 +15,24 @@ const styles = StyleSheet.create({
       default: {},
     }),
   },
+
+  // LAYOUT RESPONSIVE
+  // En web: formulario y cartel informativo
+  // En celu uno arriba del otro
   pageWrapper: {
     ...Platform.select({
       web: { flexDirection: "row", alignItems: "flex-start", gap: 24 },
       default: { flexDirection: "column", width: "100%" },
     }),
   },
+  // columna del formulario, en web tiene ancho fijo
   formCol: {
     ...Platform.select({
       web: { width: 340 },
       default: { width: "100%" },
     }),
   },
+  // avatar
   avatarContainer: {
     alignItems: "center",
     marginBottom: spacing.sm,
@@ -35,6 +43,7 @@ const styles = StyleSheet.create({
     borderRadius: 90,
     alignSelf: "center",
   },
+  // titulo registrarse
   title: {
     fontSize: 26,
     fontWeight: "800",
@@ -42,6 +51,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing.lg,
     textAlign: "center",
   },
+  // campos de texto
   input: {
     backgroundColor: "#fff",
     borderRadius: radius.card,
@@ -51,25 +61,30 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
   },
+  // reglas de contraseña
   rulesBox: {
     marginBottom: spacing.sm,
     marginTop: -4,
   },
+  // regla no cumplida en gris
   rule: {
     fontSize: 16,
     color: colors.textSecondary,
     fontWeight: "400",
     fontFamily: "Elsie",
   },
+  // regla cumplida en verde
   ruleOk: {
     color: colors.secondary,
     fontWeight: "600",
   },
+  // mensaje de error
   error: {
     color: colors.primary,
     marginBottom: spacing.sm,
     textAlign: "center",
   },
+  // boton de registrarse
   button: {
     backgroundColor: colors.primary,
     paddingVertical: 14,
@@ -82,12 +97,13 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 16,
   },
+  // link de ya tenes cuenta, inicia sesion
   link: {
     color: colors.primary,
     textAlign: "center",
     marginTop: spacing.md,
   },
-
+  // cartel informativo
   infoCard: {
     backgroundColor: "#fff8f5", // crema
     borderLeftWidth: 4,
@@ -106,7 +122,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 2,
   },
-
   // Título del cartel ("¿Por qué registrarse?").
   infoTitle: {
     fontSize: 18,
@@ -116,7 +131,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "Sedan",
   },
-
   // Cada línea de info ("Valorá recetas", "Guardá favoritas", etc).
   infoLine: {
     fontSize: 14,
