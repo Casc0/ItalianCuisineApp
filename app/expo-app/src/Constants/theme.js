@@ -1,18 +1,18 @@
 export const colors = {
-  italianGreen: '#008C45',
-  italianWhite: '#F4F9FF',
-  italianRed: '#CD212A',
+  italianGreen: "#008C45",
+  italianWhite: "#F4F9FF",
+  italianRed: "#CD212A",
 
-  primary: '#CD212A',       // rojo (botones, acentos principales)
-  secondary: '#008C45',     // verde (detalles secundarios)
-  background: '#f7f1db',    // fondo general
-  cardBackground: '#ffffff',
-  tagBackground: 'rgba(255,255,255,0.9)',
-  tagText: '#111111',
-  textPrimary: '#1a1a1a',
-  textSecondary: '#555555',
-  rating: '#ffb024',
-  border: '#e5e5e5',
+  primary: "#CD212A", // rojo (botones, acentos principales)
+  secondary: "#008C45", // verde (detalles secundarios)
+  background: "#f7f1db", // fondo general
+  cardBackground: "#ffffff",
+  tagBackground: "rgba(255,255,255,0.9)",
+  tagText: "#111111",
+  textPrimary: "#1a1a1a",
+  textSecondary: "#555555",
+  rating: "#ffb024",
+  border: "#e5e5e5",
 };
 
 export const spacing = {
