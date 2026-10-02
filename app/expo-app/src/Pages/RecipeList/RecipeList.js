@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import {
   FlatList,
   ActivityIndicator,
@@ -8,33 +8,33 @@ import {
   TouchableOpacity,
   ScrollView,
   Platform,
-} from 'react-native';
-import { getRecipes, getAllRecipes } from '../../Services/recipes.service';
-import { PAGE_SIZE } from '../../Constants/constants';
-import RecipeCard from '../../Components/RecipeCard/RecipeCard';
-import RecipeCardCompact from '../../Components/RecipeCardList/RecipeCardList';
-import styles from './Styles';
+} from "react-native";
+import { getRecipes, getAllRecipes } from "../../Services/recipes.service";
+import { PAGE_SIZE } from "../../Constants/constants";
+import RecipeCard from "../../Components/RecipeCard/RecipeCard";
+import RecipeCardCompact from "../../Components/RecipeCardList/RecipeCardList";
+import styles from "./Styles";
 
 // En la web mantenemos la grilla de 4 columnas (más lugar en pantalla).
 // En celular usamos la card horizontal completa, porque en 4 columnas
 // el nombre de la receta no se llegaba a leer bien.
-const isWeb = Platform.OS === 'web';
+const isWeb = Platform.OS === "web";
 const MIN_INITIAL_ITEMS = 20;
 
 // Opciones fijas: no dependen de los datos, ya las conocemos de antemano
 // porque así están definidas en el modelo del backend.
-const DIFICULTADES = ['Fácil', 'Medio', 'Difícil'];
+const DIFICULTADES = ["Fácil", "Medio", "Difícil"];
 const RATING_OPTIONS = [3, 4, 5];
 
 export default function RecipeList({ navigation }) {
-  // --- Paginado normal (scroll infinito), igual que antes ---
+  // --- Paginado normal (scroll infinito) --
   const [recipes, setRecipes] = useState([]);
   const [from, setFrom] = useState(0);
   const [hasMore, setHasMore] = useState(true);
   const [loading, setLoading] = useState(false);
 
   // --- Búsqueda y filtros: trabajan sobre el set completo de recetas ---
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [allRecipes, setAllRecipes] = useState([]);
   const [loadingAll, setLoadingAll] = useState(false);
 
@@ -46,13 +46,21 @@ export default function RecipeList({ navigation }) {
 
   // --- Booleanos derivados ---
   const isSearching = query.trim().length > 0;
-  const isFiltering = !!(selectedRegion || selectedDificultad || selectedTag || minRating);
+  const isFiltering = !!(
+    selectedRegion ||
+    selectedDificultad ||
+    selectedTag ||
+    minRating
+  );
   const hasActiveFilter = isSearching || isFiltering;
   const needsFullData = hasActiveFilter || filtersOpen;
 
-  const activeFilterCount = [selectedRegion, selectedDificultad, selectedTag, minRating].filter(
-    Boolean
-  ).length;
+  const activeFilterCount = [
+    selectedRegion,
+    selectedDificultad,
+    selectedTag,
+    minRating,
+  ].filter(Boolean).length;
 
   const loadMore = async () => {
     if (loading || !hasMore) return;
@@ -63,7 +71,7 @@ export default function RecipeList({ navigation }) {
       setFrom((prev) => prev + PAGE_SIZE);
       setHasMore(result.hasMore);
     } catch (error) {
-      console.error('Error al cargar recetas:', error);
+      console.error("Error al cargar recetas:", error);
     } finally {
       setLoading(false);
     }
@@ -96,7 +104,7 @@ export default function RecipeList({ navigation }) {
           const data = await getAllRecipes();
           setAllRecipes(data);
         } catch (error) {
-          console.error('Error al cargar todas las recetas:', error);
+          console.error("Error al cargar todas las recetas:", error);
         } finally {
           setLoadingAll(false);
         }
@@ -106,30 +114,41 @@ export default function RecipeList({ navigation }) {
   }, [needsFullData]);
 
   const normalize = (text) =>
-    text
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '');
+    text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 
   // Las listas de opciones para región y etiquetas se arman solas a partir de
   // las recetas ya cargadas. Set() descarta los valores repetidos; sort() las
   // deja en orden alfabético.
-  const regionOptions = [...new Set(allRecipes.map((r) => r.categorias?.region).filter(Boolean))].sort();
-  const tagOptions = [...new Set(allRecipes.flatMap((r) => r.identificadores || []))].sort();
+  const regionOptions = [
+    ...new Set(allRecipes.map((r) => r.categorias?.region).filter(Boolean)),
+  ].sort();
+  const tagOptions = [
+    ...new Set(allRecipes.flatMap((r) => r.identificadores || [])),
+  ].sort();
 
   const matchesFilters = (recipe) => {
-    if (isSearching && !normalize(recipe.nombre).includes(normalize(query))) return false;
-    if (selectedRegion && recipe.categorias?.region !== selectedRegion) return false;
-    if (selectedDificultad && recipe.categorias?.dificultad !== selectedDificultad) return false;
-    if (selectedTag && !(recipe.identificadores || []).includes(selectedTag)) return false;
-    if (minRating && (recipe.valoracion?.promedio ?? 0) < minRating) return false;
+    if (isSearching && !normalize(recipe.nombre).includes(normalize(query)))
+      return false;
+    if (selectedRegion && recipe.categorias?.region !== selectedRegion)
+      return false;
+    if (
+      selectedDificultad &&
+      recipe.categorias?.dificultad !== selectedDificultad
+    )
+      return false;
+    if (selectedTag && !(recipe.identificadores || []).includes(selectedTag))
+      return false;
+    if (minRating && (recipe.valoracion?.promedio ?? 0) < minRating)
+      return false;
     return true;
   };
 
-  const filteredRecipes = hasActiveFilter ? allRecipes.filter(matchesFilters) : recipes;
+  const filteredRecipes = hasActiveFilter
+    ? allRecipes.filter(matchesFilters)
+    : recipes;
 
   const clearFilters = () => {
-    setQuery('');
+    setQuery("");
     setSelectedRegion(null);
     setSelectedDificultad(null);
     setSelectedTag(null);
@@ -152,11 +171,20 @@ export default function RecipeList({ navigation }) {
           clearButtonMode="while-editing"
         />
         <TouchableOpacity
-          style={[styles.filtersToggle, isFiltering && styles.filtersToggleActive]}
+          style={[
+            styles.filtersToggle,
+            isFiltering && styles.filtersToggleActive,
+          ]}
           onPress={() => setFiltersOpen((prev) => !prev)}
         >
-          <Text style={[styles.filtersToggleText, isFiltering && styles.filtersToggleTextActive]}>
-            Filtros{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''} {filtersOpen ? '▲' : '▼'}
+          <Text
+            style={[
+              styles.filtersToggleText,
+              isFiltering && styles.filtersToggleTextActive,
+            ]}
+          >
+            Filtros{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}{" "}
+            {filtersOpen ? "▲" : "▼"}
           </Text>
         </TouchableOpacity>
       </View>
@@ -164,7 +192,9 @@ export default function RecipeList({ navigation }) {
       {filtersOpen && (
         <View style={styles.filtersPanel}>
           {loadingAll && allRecipes.length === 0 ? (
-            <Text style={styles.filtersLoadingText}>Cargando opciones de filtro...</Text>
+            <Text style={styles.filtersLoadingText}>
+              Cargando opciones de filtro...
+            </Text>
           ) : (
             <>
               <View style={styles.filterGroup}>
@@ -173,10 +203,20 @@ export default function RecipeList({ navigation }) {
                   {DIFICULTADES.map((d) => (
                     <TouchableOpacity
                       key={d}
-                      style={[styles.pill, selectedDificultad === d && styles.pillActive]}
-                      onPress={() => togglePill(d, selectedDificultad, setSelectedDificultad)}
+                      style={[
+                        styles.pill,
+                        selectedDificultad === d && styles.pillActive,
+                      ]}
+                      onPress={() =>
+                        togglePill(d, selectedDificultad, setSelectedDificultad)
+                      }
                     >
-                      <Text style={[styles.pillText, selectedDificultad === d && styles.pillTextActive]}>
+                      <Text
+                        style={[
+                          styles.pillText,
+                          selectedDificultad === d && styles.pillTextActive,
+                        ]}
+                      >
                         {d}
                       </Text>
                     </TouchableOpacity>
@@ -190,10 +230,18 @@ export default function RecipeList({ navigation }) {
                   {RATING_OPTIONS.map((n) => (
                     <TouchableOpacity
                       key={n}
-                      style={[styles.pill, minRating === n && styles.pillActive]}
+                      style={[
+                        styles.pill,
+                        minRating === n && styles.pillActive,
+                      ]}
                       onPress={() => togglePill(n, minRating, setMinRating)}
                     >
-                      <Text style={[styles.pillText, minRating === n && styles.pillTextActive]}>
+                      <Text
+                        style={[
+                          styles.pillText,
+                          minRating === n && styles.pillTextActive,
+                        ]}
+                      >
                         {n}+ ⭐
                       </Text>
                     </TouchableOpacity>
@@ -212,10 +260,20 @@ export default function RecipeList({ navigation }) {
                     {regionOptions.map((r) => (
                       <TouchableOpacity
                         key={r}
-                        style={[styles.pill, selectedRegion === r && styles.pillActive]}
-                        onPress={() => togglePill(r, selectedRegion, setSelectedRegion)}
+                        style={[
+                          styles.pill,
+                          selectedRegion === r && styles.pillActive,
+                        ]}
+                        onPress={() =>
+                          togglePill(r, selectedRegion, setSelectedRegion)
+                        }
                       >
-                        <Text style={[styles.pillText, selectedRegion === r && styles.pillTextActive]}>
+                        <Text
+                          style={[
+                            styles.pillText,
+                            selectedRegion === r && styles.pillTextActive,
+                          ]}
+                        >
                           {r}
                         </Text>
                       </TouchableOpacity>
@@ -235,10 +293,20 @@ export default function RecipeList({ navigation }) {
                     {tagOptions.map((t) => (
                       <TouchableOpacity
                         key={t}
-                        style={[styles.pill, selectedTag === t && styles.pillActive]}
-                        onPress={() => togglePill(t, selectedTag, setSelectedTag)}
+                        style={[
+                          styles.pill,
+                          selectedTag === t && styles.pillActive,
+                        ]}
+                        onPress={() =>
+                          togglePill(t, selectedTag, setSelectedTag)
+                        }
                       >
-                        <Text style={[styles.pillText, selectedTag === t && styles.pillTextActive]}>
+                        <Text
+                          style={[
+                            styles.pillText,
+                            selectedTag === t && styles.pillTextActive,
+                          ]}
+                        >
                           {t}
                         </Text>
                       </TouchableOpacity>
@@ -248,8 +316,13 @@ export default function RecipeList({ navigation }) {
               )}
 
               {(isFiltering || isSearching) && (
-                <TouchableOpacity style={styles.clearFiltersButton} onPress={clearFilters}>
-                  <Text style={styles.clearFiltersText}>Limpiar filtros y búsqueda</Text>
+                <TouchableOpacity
+                  style={styles.clearFiltersButton}
+                  onPress={clearFilters}
+                >
+                  <Text style={styles.clearFiltersText}>
+                    Limpiar filtros y búsqueda
+                  </Text>
                 </TouchableOpacity>
               )}
             </>
@@ -259,8 +332,9 @@ export default function RecipeList({ navigation }) {
 
       {hasActiveFilter && !loadingAll && (
         <Text style={styles.resultsCount}>
-          {filteredRecipes.length} receta{filteredRecipes.length !== 1 ? 's' : ''} encontrada
-          {filteredRecipes.length !== 1 ? 's' : ''}
+          {filteredRecipes.length} receta
+          {filteredRecipes.length !== 1 ? "s" : ""} encontrada
+          {filteredRecipes.length !== 1 ? "s" : ""}
         </Text>
       )}
 
@@ -271,28 +345,36 @@ export default function RecipeList({ navigation }) {
           data={filteredRecipes}
           keyExtractor={(item) => item.slug}
           numColumns={isWeb ? 4 : 1}
-          key={isWeb ? 'grid' : 'list'}
+          key={isWeb ? "grid" : "list"}
           renderItem={({ item }) =>
             isWeb ? (
               <RecipeCardCompact
                 recipe={item}
-                onPress={() => navigation.navigate('RecipeDetail', { id: item.slug })}
+                onPress={() =>
+                  navigation.navigate("RecipeDetail", { id: item.slug })
+                }
               />
             ) : (
               <RecipeCard
                 recipe={item}
-                onPress={() => navigation.navigate('RecipeDetail', { id: item.slug })}
+                onPress={() =>
+                  navigation.navigate("RecipeDetail", { id: item.slug })
+                }
               />
             )
           }
           onEndReached={!hasActiveFilter ? loadMore : undefined}
           onEndReachedThreshold={0.5}
           ListFooterComponent={
-            !hasActiveFilter && loading ? <ActivityIndicator style={styles.loader} size="small" /> : null
+            !hasActiveFilter && loading ? (
+              <ActivityIndicator style={styles.loader} size="small" />
+            ) : null
           }
           ListEmptyComponent={
             <Text style={styles.empty}>
-              {hasActiveFilter ? 'No se encontraron recetas con esos criterios' : 'No hay recetas todavía'}
+              {hasActiveFilter
+                ? "No se encontraron recetas con esos criterios"
+                : "No hay recetas todavía"}
             </Text>
           }
           contentContainerStyle={styles.listContent}
