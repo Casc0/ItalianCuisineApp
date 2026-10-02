@@ -97,3 +97,23 @@ El backend requiere un archivo `.env` en `app/server/`. Hay un `.env.example` co
 | `JWT_SECRET` | Clave secreta para firmar los tokens JWT |
 
 ---
+
+## Accesibilidad
+
+Se evaluó la accesibilidad de la aplicación web utilizando **Lighthouse** (herramienta integrada en Google Chrome DevTools).
+
+**Resultado obtenido: 100/100**
+
+Las pruebas aprobadas incluyen:
+
+- Contraste de colores suficiente entre texto y fondo
+- Atributos ARIA correctamente utilizados
+- Imágenes con texto alternativo (`alt`)
+- Documento con título (`<title>`)
+- Jerarquía de encabezados en orden secuencial
+- Idioma del documento declarado en el elemento `<html>`
+- Zoom no restringido para el usuario
+- Landmark principal (`<main>`) presente
+- Navegación por teclado sin conflictos de `tabindex`
+
+> El JSON del reporte (lighthouse_accesibility.json) se encuentra adjuntado al trabajo, fuera de las carpetas principales. 
