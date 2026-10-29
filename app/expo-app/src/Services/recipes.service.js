@@ -45,12 +45,22 @@ export const getSimilarRecipes = async (id) => {
 };
 
 export const getAllRecipes = async () => {
-  const response = await fetch(`${API_BASE_URL}/recipes?from=0&limit=70`);
-  if (!response.ok) {
-    throw new Error('Error al traer todas las recetas');
+  let all = [];
+  let from = 0;
+  let hasMore = true;
+
+  while (hasMore) {
+    const response = await fetch(`${API_BASE_URL}/recipes?from=${from}&limit=50`);
+    if (!response.ok) {
+      throw new Error('Error al traer todas las recetas');
+    }
+    const json = await response.json();
+    all = [...all, ...json.data];
+    hasMore = json.hasMore;
+    from += 50;
   }
-  const json = await response.json();
-  return json.data;
+
+  return all;
 };
 
 export const createRecipe = async (recipeData) => {

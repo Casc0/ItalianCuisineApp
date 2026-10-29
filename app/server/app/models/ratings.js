@@ -1,5 +1,5 @@
-const Rating = require('../../db/Rating');
-const Recipe = require('../../db/Recipe');
+const Rating = require("../../db/Rating");
+const Recipe = require("../../db/Recipe");
 
 const upsertRating = async (recipeId, userId, valor) => {
   // findOneAndUpdate con upsert: inserta si no existe, actualiza si ya existe
@@ -7,7 +7,7 @@ const upsertRating = async (recipeId, userId, valor) => {
   await Rating.findOneAndUpdate(
     { recipeId, userId },
     { valor, createdAt: Date.now() },
-    { upsert: true }
+    { upsert: true },
   );
 };
 
@@ -18,8 +18,8 @@ const recalcularValoracion = async (recipeId) => {
     {
       $group: {
         _id: null,
-        promedio: { $avg: '$valor' }, // promedio de todos los valores
-        total:    { $sum: 1 },        // cantidad de valoraciones
+        promedio: { $avg: "$valor" }, // promedio de todos los valores
+        total: { $sum: 1 }, // cantidad de valoraciones
       },
     },
   ]);
@@ -28,9 +28,18 @@ const recalcularValoracion = async (recipeId) => {
 
   // Redondeamos a 1 decimal para evitar valores como 3.6666666...
   await Recipe.findByIdAndUpdate(recipeId, {
-    'valoracion.promedio': Math.round(promedio * 10) / 10,
-    'valoracion.total':    total,
+    "valoracion.promedio": Math.round(promedio * 10) / 10,
+    "valoracion.total": total,
   });
 };
 
-module.exports = { upsertRating, recalcularValoracion };
+const getRecipeBySlug = async (slug) => {
+  return Recipe.findOne({ slug }).lean();
+};
+
+const getValoracion = async (recipeId) => {
+  const recipe = await Recipe.findById(recipeId).select("valoracion").lean();
+  return recipe?.valoracion ?? { promedio: 0, total: 0 };
+};
+
+module.exports = { upsertRating, recalcularValoracion, getRecipeBySlug, getValoracion };

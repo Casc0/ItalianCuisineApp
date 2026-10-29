@@ -7,14 +7,23 @@ const register = async (req, res) => {
       return res.status(400).json({ message: 'nombre, email y password son requeridos.' });
     }
 
+    // Validar reglas de contraseña (mismas que en el cliente)
+    if (password.length < 8) {
+      return res.status(400).json({ message: 'La contraseña debe tener al menos 8 caracteres.' });
+    }
+    if (!/[A-Z]/.test(password)) {
+      return res.status(400).json({ message: 'La contraseña debe tener al menos una mayúscula.' });
+    }
+    if (!/[0-9]/.test(password)) {
+      return res.status(400).json({ message: 'La contraseña debe tener al menos un número.' });
+    }
+
     const user = await model.registerUser({ nombre, email, password });
-    // No devolvemos el passwordHash, solo los datos públicos del usuario
     res.status(201).json({
       success: true,
       data: { id: user._id, nombre: user.nombre, email: user.email },
     });
   } catch (error) {
-    // Código 11000: MongoDB rechazó la operación por un valor duplicado (el email ya existe)
     if (error.code === 11000) {
       return res.status(409).json({ message: 'El email ya está registrado.' });
     }
