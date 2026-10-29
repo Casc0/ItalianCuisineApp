@@ -25,106 +25,114 @@ export default function Register({ navigation }) {
   const hasUppercase = /[A-Z]/.test(password);
   const hasNumber = /[0-9]/.test(password);
 
- const handleRegister = async () => {
-  console.log('SE APRETÓ EL BOTÓN DE REGISTRARME');
-  
-  if (!nombre || !email || !password) {
-    console.log('CORTADO: faltan campos', { nombre, email, password });
-    setError("Completá todos los campos");
-    return;
-  }
-  
-  if (!hasMinLength || !hasUppercase || !hasNumber) {
-    console.log('CORTADO: contraseña no cumple', { hasMinLength, hasUppercase, hasNumber });
-    setError("La contraseña debe tener al menos 8 caracteres, una mayúscula y un número");
-    return;
-  }
-  
-  console.log('PASÓ LAS VALIDACIONES, llamando a register()...');
-  setError("");
-  setLoading(true);
-  try {
-    await register(nombre, email, password);
-    console.log('register() TERMINÓ BIEN');
-    navigation.goBack();
-  } catch (err) {
-    console.log('register() TIRÓ ERROR:', err.message);
-    setError(err.message);
-  } finally {
-    setLoading(false);
-  }
-};
+  const handleRegister = async () => {
+    console.log("SE APRETÓ EL BOTÓN DE REGISTRARME");
+
+    if (!nombre || !email || !password) {
+      console.log("CORTADO: faltan campos", { nombre, email, password });
+      setError("Completá todos los campos");
+      return;
+    }
+
+    if (!hasMinLength || !hasUppercase || !hasNumber) {
+      console.log("CORTADO: contraseña no cumple", {
+        hasMinLength,
+        hasUppercase,
+        hasNumber,
+      });
+      setError(
+        "La contraseña debe tener al menos 8 caracteres, una mayúscula y un número",
+      );
+      return;
+    }
+
+    console.log("PASÓ LAS VALIDACIONES, llamando a register()...");
+    setError("");
+    setLoading(true);
+    try {
+      await register(nombre, email, password);
+      console.log("register() TERMINÓ BIEN");
+      navigation.goBack();
+    } catch (err) {
+      console.log("register() TIRÓ ERROR:", err.message);
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <View style={styles.container}>
-        <View style={styles.pageWrapper}>
-            <View style={styles.formCol}>
-      <View style={styles.avatarContainer}>
-        <Image
-          source={require("../../../assets/images/usuario_imagen.png")}
-          style={styles.avatarImage}
-        />
-      </View>
+      <View style={styles.pageWrapper}>
+        <View style={styles.formCol}>
+          <View style={styles.avatarContainer}>
+            <Image
+              source={require("../../../assets/images/usuario_imagen.png")}
+              style={styles.avatarImage}
+            />
+          </View>
 
-      <Text style={styles.title}>Crear cuenta</Text>
+          <Text style={styles.title}>Crear cuenta</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Nombre"
-        value={nombre}
-        onChangeText={setNombre}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        value={email}
-        onChangeText={setEmail}
-        autoCapitalize="none"
-        keyboardType="email-address"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Contraseña"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
+          <TextInput
+            style={styles.input}
+            placeholder="Nombre"
+            value={nombre}
+            onChangeText={setNombre}
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Email"
+            value={email}
+            onChangeText={setEmail}
+            autoCapitalize="none"
+            keyboardType="email-address"
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Contraseña"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+          />
 
-      <View style={styles.rulesBox}>
-        <Text style={[styles.rule, hasMinLength && styles.ruleOk]}>
-          {hasMinLength ? "✓" : "○"} Mínimo 8 caracteres
-        </Text>
-        <Text style={[styles.rule, hasUppercase && styles.ruleOk]}>
-          {hasUppercase ? "✓" : "○"} Una mayúscula
-        </Text>
-        <Text style={[styles.rule, hasNumber && styles.ruleOk]}>
-          {hasNumber ? "✓" : "○"} Un número
-        </Text>
-      </View>
+          <View style={styles.rulesBox}>
+            <Text style={[styles.rule, hasMinLength && styles.ruleOk]}>
+              {hasMinLength ? "✓" : "○"} Mínimo 8 caracteres
+            </Text>
+            <Text style={[styles.rule, hasUppercase && styles.ruleOk]}>
+              {hasUppercase ? "✓" : "○"} Una mayúscula
+            </Text>
+            <Text style={[styles.rule, hasNumber && styles.ruleOk]}>
+              {hasNumber ? "✓" : "○"} Un número
+            </Text>
+          </View>
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={handleRegister}
-        disabled={loading}
-      >
-        {loading ? (
-          <ActivityIndicator color="#fff" />
-        ) : (
-          <Text style={styles.buttonText}>Registrarme</Text>
-        )}
-      </TouchableOpacity>
-    </View>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={handleRegister}
+            disabled={loading}
+          >
+            {loading ? (
+              <ActivityIndicator color="#fff" />
+            ) : (
+              <Text style={styles.buttonText}>Registrarme</Text>
+            )}
+          </TouchableOpacity>
+        </View>
 
-    {/* Cartelito informativo */}
+        {/* Cartelito informativo */}
         <View style={styles.infoCard}>
           <Text style={styles.infoTitle}>¿Por qué registrarte?</Text>
           <Text style={styles.infoLine}>⭐ Podés valorar las recetas</Text>
-          <Text style={styles.infoLine}>📊 Nos ayudás a saber qué le gusta más a la gente</Text>
-          <Text style={styles.infoLine}>🍝 Sumamos más recetas del estilo que más interesa</Text>
+          <Text style={styles.infoLine}>
+            📊 Nos ayudás a saber qué le gusta más a la gente
+          </Text>
+          <Text style={styles.infoLine}>
+            🍝 Sumamos más recetas del estilo que más interesa
+          </Text>
         </View>
-
+      </View>
     </View>
-</View>
-
   );
 }

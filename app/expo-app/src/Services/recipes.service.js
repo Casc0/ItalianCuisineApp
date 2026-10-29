@@ -1,4 +1,13 @@
 import { API_BASE_URL } from '../Constants/constants';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+// Si el servidor responde 401, el token venció: lo borramos
+const handleUnauthorized = async (response) => {
+  if (response.status === 401) {
+    await AsyncStorage.removeItem('token');
+    throw new Error('Tu sesión expiró. Por favor, volvé a iniciar sesión.');
+  }
+};
 
 export const getRecipes = async (from, limit) => {
   const response = await fetch(`${API_BASE_URL}/recipes?from=${from}&limit=${limit}`);
@@ -35,7 +44,6 @@ export const getSimilarRecipes = async (id) => {
   return json.data;
 };
 
-// Trae TODAS las recetas de una sola vez (usado solo para el buscador)
 export const getAllRecipes = async () => {
   const response = await fetch(`${API_BASE_URL}/recipes?from=0&limit=70`);
   if (!response.ok) {
@@ -67,9 +75,10 @@ export const rateRecipe = async (slug, valor, token) => {
     },
     body: JSON.stringify({ valor }),
   });
+  await handleUnauthorized(response);
   const json = await response.json();
   if (!response.ok) {
     throw new Error(json.message || 'Error al valorar la receta');
   }
-  return json.data; // { promedio, total }
+  return json.data;
 };

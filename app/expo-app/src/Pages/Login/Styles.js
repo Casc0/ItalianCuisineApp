@@ -2,7 +2,6 @@ import { StyleSheet, Platform } from "react-native";
 import { colors, spacing, radius } from "../../Constants/theme";
 
 const styles = StyleSheet.create({
-
   // -- Contenedor principal --
   // Centra todo en pantalla. En web ocupa todo el viewport.
   container: {
@@ -43,8 +42,8 @@ const styles = StyleSheet.create({
   avatarWrapper: {
     width: 90,
     height: 90,
-    borderRadius: 45,        // la mitad del width para que quede circular
-    overflow: "hidden",      // corta lo que se pase del círculo
+    borderRadius: 45, // la mitad del width para que quede circular
+    overflow: "hidden", // corta lo que se pase del círculo
     alignSelf: "center",
     backgroundColor: "#fff8f8",
   },

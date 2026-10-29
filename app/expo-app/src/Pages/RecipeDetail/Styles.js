@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 import { colors, spacing, radius } from "../../Constants/theme";
 
 const styles = StyleSheet.create({
-
   // -- Base --
   // Fondo de toda la pantalla de detalle.
   container: {
@@ -120,7 +119,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.06,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 3 },
-    elevation: 2,               // sombra en Android
+    elevation: 2, // sombra en Android
   },
 
   // -- Prompt de login (si no está logueado) --
@@ -183,7 +182,7 @@ const styles = StyleSheet.create({
     fontFamily: "Quicksand",
   },
   ingredientText: {
-    flex: 1,                    // ocupa todo el espacio que sobra después de la bolita
+    flex: 1, // ocupa todo el espacio que sobra después de la bolita
     fontSize: 15,
     fontFamily: "Quicksand",
     fontWeight: "500",
@@ -201,11 +200,11 @@ const styles = StyleSheet.create({
   stepNumber: {
     width: 26,
     height: 26,
-    borderRadius: 13,           // mitad del width = círculo perfecto
+    borderRadius: 13, // mitad del width = círculo perfecto
     backgroundColor: colors.primary,
     color: "#fff",
     textAlign: "center",
-    lineHeight: 26,             // centra el número verticalmente
+    lineHeight: 26, // centra el número verticalmente
     fontWeight: "700",
     fontSize: 13,
     marginRight: 10,

@@ -48,6 +48,10 @@ const getRecipeById = async (req, res) => {
 
 const getSimilarRecipes = async (req, res) => {
   try {
+    const recipe = await model.getRecipeById(req.params.id);
+    if (!recipe) {
+      return res.status(404).json({ message: "Receta no encontrada." });
+    }
     const result = await model.getSimilarRecipes(req.params.id, 5);
     res.json({ success: true, data: result });
   } catch (error) {

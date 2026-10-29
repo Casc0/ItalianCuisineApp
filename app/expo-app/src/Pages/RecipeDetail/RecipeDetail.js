@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Ionicons } from "@expo/vector-icons";
-import {AnimatedRecipeCard} from "../../Components/RecipeCard/RecipeCard";
+import { AnimatedRecipeCard } from "../../Components/RecipeCard/RecipeCard";
 import {
   View,
   Text,
@@ -16,8 +16,8 @@ import {
 } from "../../Services/recipes.service";
 import { getImageUrl } from "../../Constants/constants";
 import styles from "./Styles";
-import StarRating from '../../Components/StarRating/StarRating';
-import { useAuth } from '../../Context/AuthContext';
+import StarRating from "../../Components/StarRating/StarRating";
+import { useAuth } from "../../Context/AuthContext";
 
 export default function RecipeDetail({ route, navigation }) {
   const { id } = route.params;
@@ -179,24 +179,27 @@ export default function RecipeDetail({ route, navigation }) {
           </View>
         )}
 
-<View style={styles.ratingBox}>
-  {user ? (
-    <StarRating
-      slug={recipe.slug}
-      currentAverage={recipe.valoracion?.promedio}
-      currentTotal={recipe.valoracion?.total}
-      onRated={(updated) => setRecipe((prev) => ({ ...prev, valoracion: updated }))}
-    />
-  ) : (
-    <TouchableOpacity
-      onPress={() => navigation.navigate('Login')}
-      style={styles.loginPromptInner}
-    >
-      <Text style={styles.loginPromptText}>Iniciá sesión para valorar esta receta →</Text>
-    </TouchableOpacity>
-  )}
-</View>
-
+        <View style={styles.ratingBox}>
+          {user ? (
+            <StarRating
+              slug={recipe.slug}
+              currentAverage={recipe.valoracion?.promedio}
+              currentTotal={recipe.valoracion?.total}
+              onRated={(updated) =>
+                setRecipe((prev) => ({ ...prev, valoracion: updated }))
+              }
+            />
+          ) : (
+            <TouchableOpacity
+              onPress={() => navigation.navigate("Login")}
+              style={styles.loginPromptInner}
+            >
+              <Text style={styles.loginPromptText}>
+                Iniciá sesión para valorar esta receta →
+              </Text>
+            </TouchableOpacity>
+          )}
+        </View>
       </View>
 
       {/* Recetas similares */}

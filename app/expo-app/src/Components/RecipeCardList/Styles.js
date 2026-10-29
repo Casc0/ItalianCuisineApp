@@ -10,8 +10,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#e5e5e5',
   },
-  // Nuevo: contenedor exclusivo de la imagen, con posición 'relative' explícita
-  // para que las franjas absolutas de adentro se midan desde SU borde, no el de la card entera
   imageWrapper: {
     width: '100%',
     aspectRatio: 2,
